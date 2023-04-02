@@ -24,7 +24,6 @@ app.use(express.urlencoded());
 app.post("/", async (req, res) => {
 
     const {prompt} = req.body;
-    console.log(prompt, "we getting it?")
 
     try{
         const response = await openai.createCompletion({
